@@ -48,18 +48,77 @@
 					</p>
 				</section>
 				<section>
-					<h1>Instalando todo</h1>
-					<a href="#"></a>
-					<p>
-						<small>Creado por Santiago Chío Benavides</small>
-					</p>
+					<section>
+						<h3>Instalando todo</h3>
+						<a href="http://git-scm.com/">Página Git oficial</a>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ### En Git Bash
+
+					        $git --version
+					    </script>
+					</section>
+					<section>
+						<h3>GitHub</h3>
+						<a href="https://windows.github.com/">Opcional GitHub cliente GUI</a>
+					</section>
+					<section>
+						<img data-src="img/github_gui_client.png" alt="Git" />
+					</section>
 				</section>
 				<section>
 					<section>
                         <h2>Git</h2>
                         <p>Es un sistema de control de versiones</p>
-                  		<img data-src="img/git-logo.jpg" alt="Git" >
+                  		<img data-src="img/git-logo.jpg" alt="Git" />
                   	</section>
+                  	<section>
+                        <h2>Estructura proyecto en Git</h2>
+                  		<img data-src="img/git_over_time.png" alt="Git" />
+                  	</section>
+                  	<section>
+                        <h2>Git es independiente</h2>
+                        <p>La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar.</p>
+                  	</section>
+				</section>
+				<section>
+					<section>
+						<h2>Configuración</h2>
+						<p>
+							Abrir Git Bash
+						</p>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ### Configuración básica
+
+					        $git config --global user.name "schiob"
+					        $git config --global user.email "schiob4@gmail.com"
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ### Configuración opcional
+
+					        $git config --global color.ui true
+					        $git config --global core.editor vim
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ### Ver la configuración
+
+					        $git config -l
+					        user.name=schiob
+							user.email=schiob4@gmail.com
+							credential.helper=cache
+							color.ui=true
+							core.editor=vim
+							alias.nicelog=log --oneline --graph --all
+							alias.lol=log --oneline --graph --all --decorate
+					    </script>
+					</section>
 				</section>
 				<section>
 					<h2>GitHub</h2>
