@@ -56,7 +56,7 @@
 					    <script type="text/template">
 					        ### En Git Bash
 
-					        $git --version
+					        $ git --version
 					    </script>
 					</section>
 					<section>
@@ -98,23 +98,23 @@
 					    <script type="text/template">
 					        ### Configuración básica
 
-					        $git config --global user.name "schiob"
-					        $git config --global user.email "schiob4@gmail.com"
+					        $ git config --global user.name "schiob"
+					        $ git config --global user.email "schiob4@gmail.com"
 					    </script>
 					</section>
 					<section data-markdown>
 					    <script type="text/template">
 					        ### Configuración opcional
 
-					        $git config --global color.ui true
-					        $git config --global core.editor vim
+					        $ git config --global color.ui true
+					        $ git config --global core.editor vim
 					    </script>
 					</section>
 					<section data-markdown>
 					    <script type="text/template">
 					        ### Ver la configuración
 
-					        $git config -l
+					        $ git config -l
 					        user.name=schiob
 							user.email=schiob4@gmail.com
 							credential.helper=cache
@@ -139,6 +139,79 @@
 							Red social para programadores.
 						</p>
 						<img data-src="img/github_map.png" alt="Git" />
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ### Git Basics
+
+					        $ mkdir super_web
+					        $ cd super_web
+					        $ git init
+					        $ ls -a
+					    </script>
+					</section>
+					<section>
+						<h2>Areas principales</h2>
+						<img data-src="img/areas.png" alt="Git" />
+					</section>
+					<section>
+						<h2>Git workflow</h2>
+						<ol>
+							<li>Modificas archivos en tu directorio</li>
+							<li>Especificas los archivos que se guardarán</li>
+							<li>Haces un commit, que toma los archivos del staging area y guarda una "fotografía" en la carpeta .git</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Comandos básicos</h2>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ## Git status
+
+					        $ git status
+					        On branch master
+							nothing to commit (working directory clean)
+					    </script>
+					</section>
+					<section>
+						<img data-src="img/file_life.png" alt="Git" />
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ## Git add
+
+					        $ git add -A
+					        $ git add .
+					        $ git add index.html
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ## Git commit
+
+					        $ git commit
+					        $ git commit -m "primer commit, proyecto base"
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ## Git log
+
+					        $ git log
+					        $ git log --oneline
+					    </script>
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+					        ## Git diff
+
+					        $ git diff
+					    </script>
 					</section>
 				</section>
 			</div>
