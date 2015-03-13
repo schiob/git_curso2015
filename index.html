@@ -214,8 +214,74 @@
 					    </script>
 					</section>
 				</section>
-			</div>
+				<section>
+					<section>
+						<h2>Ramas y exploración</h2>
+						<img data-src="img/branching_1.png" alt="Git" />
+					</section>
+					<section>
+						<h2>Todas las ramas son un apuntador hacia un commit</h2>
+						<img data-src="img/branching_2.png" alt="Git" />
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						### Mostrar las ramas
 
+							$ git branch
+
+						### Mostrar toooodas las ramas
+
+							$ git branch -v
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						## Crear una nueva rama testing
+
+							$ git branch testing
+						</script>
+					</section>
+					<section>
+						<h2>Así quedaría el repositorio</h2>
+						<img data-src="img/branching_3.png" alt="Git" />
+					</section>
+					<section>
+						<h2>¿Cómo sabe git en cuál rama estamos?</h2>
+						<img data-src="img/branching_4.png" alt="Git" />
+					</section>
+					<section data-markdown>
+					    <script type="text/template">
+						### Movernos a otro commit
+
+							$ git checkout sha_del_commit
+
+						### Movernos a otra rama
+
+							$ git checkout testing
+
+						### Movernos a una nueva rama y crearla
+
+							$ git checkout -b desarrollo
+					    </script>
+					</section>
+					<section>
+						<h2>Después de git checkout testing</h2>
+						<img data-src="img/branching_5.png" alt="Git" />
+					</section>
+					<section>
+						<h2>Hacer un nuevo commit en testing</h2>
+						<img data-src="img/branching_6.png" alt="Git" />
+					</section>
+					<section>
+						<h2>Regresar a la rama master con git checkout master</h2>
+						<img data-src="img/branching_7.png" alt="Git" />
+					</section>
+					<section>
+						<h2>Hacer un nuevo commit en master</h2>
+						<img data-src="img/branching_8.png" alt="Git" />
+					</section>
+				</section>
+			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
